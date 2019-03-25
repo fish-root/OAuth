@@ -93,7 +93,7 @@
 
 
 
-![upload1](assets/upload1.gif)
+![upload1](assets/login.gif)
 
 注意到上面的流程了吗？ 其实我们已经完成了一半的登录认证流程了，然后我们来分析一下。
 
