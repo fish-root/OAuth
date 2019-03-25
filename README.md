@@ -44,11 +44,11 @@
 因为我们要使用GitHub作为第三方登录，所以肯定要先到官网上注册一个application。
 
 - 网址： <https://github.com/settings/developers>
-- ![Screen Shot 2019-03-25 at 6.06.02 PM](assets/Screen Shot 2019-03-25 at 6.06.02 PM.png)
+- ![Screen Shot 2019-03-25 at 6.06.02 PM](assets/register.png)
 
 点击绿色的按钮就行了，点击后会出现👇的页面：
 
-![Screen Shot 2019-03-25 at 6.32.32 PM](assets/Screen Shot 2019-03-25 at 6.32.32 PM.png)
+![Screen Shot 2019-03-25 at 6.32.32 PM](assets/register_info.png)
 
 上面的内容很多，但是只有两个字段是关键的
 
@@ -65,7 +65,7 @@
 
 完成注册后，我们就有了这些数据：
 
-![Screen Shot 2019-03-25 at 6.33.07 PM](assets/Screen Shot 2019-03-25 at 6.33.07 PM.png)
+![Screen Shot 2019-03-25 at 6.33.07 PM](assets/app_info.png)
 
 上面有两个数据很关键
 
@@ -93,7 +93,7 @@
 
 
 
-![upload1](/Users/apple/Desktop/upload1.gif)
+![upload1](assets/upload1.gif)
 
 注意到上面的流程了吗？ 其实我们已经完成了一半的登录认证流程了，然后我们来分析一下。
 
@@ -119,7 +119,7 @@ _不重要是指中间那些网页中附带的对css js资源的请求，这些�
 </body>
 ```
 
-![Screen Shot 2019-03-25 at 7.57.01 PM](assets/Screen Shot 2019-03-25 at 7.57.01 PM.png)
+![Screen Shot 2019-03-25 at 7.57.01 PM](assets/login_page.png)
 
 关键是我们构造了一个url
 
@@ -139,7 +139,7 @@ _不重要是指中间那些网页中附带的对css js资源的请求，这些�
 
 
 
-![Screen Shot 2019-03-25 at 7.57.39 PM](assets/Screen Shot 2019-03-25 at 7.57.39 PM.png)
+![Screen Shot 2019-03-25 at 7.57.39 PM](assets/login_check.png)
 
 
 
@@ -199,7 +199,7 @@ OAuth协议下，GitHub会返回给用户一个code，然后用户浏览器通�
 
 然后我们在postman中构造这样的请求：
 
-![Screen Shot 2019-03-25 at 7.29.02 PM](/Users/apple/Desktop/Screen Shot 2019-03-25 at 7.29.02 PM.png)
+![Screen Shot 2019-03-25 at 7.29.02 PM](assets/postman.png)
 
 
 
@@ -225,7 +225,7 @@ OAuth协议下，GitHub会返回给用户一个code，然后用户浏览器通�
 
 因为我们要启动本地的服务器来监听响应，所以我们首先要修改下我们的callback URL。
 
-![Screen Shot 2019-03-25 at 9.30.02 PM](assets/Screen Shot 2019-03-25 at 9.30.02 PM.png)
+![Screen Shot 2019-03-25 at 9.30.02 PM](assets/local_url.png)
 
 请大家将这个callback URL自行修改为`http://localhost:8099/github/login`。
 
@@ -233,7 +233,7 @@ OAuth协议下，GitHub会返回给用户一个code，然后用户浏览器通�
 
 这是我们程序的目录结构
 
-![Screen Shot 2019-03-25 at 9.32.55 PM](assets/Screen Shot 2019-03-25 at 9.32.55 PM.png)
+![Screen Shot 2019-03-25 at 9.32.55 PM](assets/dir.png)
 
 然后这是我们的node代码：
 
